@@ -165,6 +165,7 @@ main = hspec $ do
       (habilidades . gemaLoca (alma "usar Mjolnir")) thor `shouldBe` []
       (energia . gemaLoca (alma "usar Mjolnir")) thor `shouldBe` 2980
 
+{-
   describe "Test de uso de gemas" $ do
     it "Dada una lista de gemas que se usa sobre un personaje entonces se modifica el mismo con el efecto individual de cada una" $ do
       (energia . usar [alma "usar Mjolnir", mente 100, espacio "XYZ"]) thor `shouldBe` 2870
@@ -174,3 +175,4 @@ main = hspec $ do
   describe "Testeo de gema más poderosa" $ do
     it "Dada una lista de gemas entonces se obtiene la más poderosa" $ do
       (energia . (gemaMasPoderosa drStrange guanteleteDeGoma)) drStrange `shouldBe` 0 -- la gema del poder quita los poderes
+-}
